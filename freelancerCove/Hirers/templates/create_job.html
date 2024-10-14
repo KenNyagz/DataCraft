@@ -1,0 +1,39 @@
+<!DOCTYPE  html>
+<html>
+<head>
+  <title>Hirer Create job</title>
+  <link rel="stylesheet" href="../static/css/create_job.css">
+</head>
+<body>
+  <form action="register_job" method="POST">
+    {% csrf_token %} <!-- For data protection against CSRF attacks -->
+    <h2>Create job posting</h2>
+
+    <label for="job-title>">Job title</label>
+    <input type="text" id="job-title" name="job_title" required>
+
+    <label for="category">Category</label>
+    <select id="category" name="category" required>
+        <option value="">-- Select job category -- </option> <!-- placeholder option; made so by the empty string for "value" -->
+        <option value="Genaral">General</option>
+        <option value="Data engineering">Data engineering</option>
+        <option value="Machine learning">Machine learning</option>
+        <option value="Deep learning">Deep learning</option>
+        <option value="Business Analysis">Business analysis</option>
+        <option value="Statistics">Statistics</option>
+        <option value="Data analysis">Data analysis</option>
+        <option value="Postmortem_or_forensic">Postmortem/Forensic</option>
+        <option value="Diagnostic_or_predictive">Diagnostic/Predictive</option>
+    </select>
+
+    <label for="description">Job description:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="pay">Pay (USD)</label>
+    <input type="number" id="pay" name="pay" required>
+
+    <input type="submit" value="Create job">
+
+  </form>
+</body>
+</html>

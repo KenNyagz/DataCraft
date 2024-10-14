@@ -1,0 +1,17 @@
+username: kennyagz
+email address: nyagaken432@yahoo.com
+pass: abcd123
+
+AWS-RDS MYSQL:
+pass: IamKen404
+master username: kennyagz
+
+Local machine mysql creds:
+username: ken
+host: localhost
+pass: @Kennyaga
+
+Django superuser/admin
+Username: ken
+password: abcd123
+email: nyagaken432@yahoo.com
