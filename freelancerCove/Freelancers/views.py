@@ -80,7 +80,6 @@ def job_details(request, job_id):
     job_ = get_object_or_404(job, id=job_id)
     hirer_id = job_.hirer_id
     hirer = get_object_or_404(Hirer, id=job_.hirer_id)
-    print(hirer.firstName)
     context = {'job': job_, 'hirer': hirer}
     return render(request, 'job_detail.html', context)
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
 from django.db.utils import IntegrityError
@@ -107,10 +107,12 @@ def freelancers_list(request):
     context = {"freelancers": freelancers}
     return render(request, 'available_freelancers.html', context)
 
-def freelancer_details(request):
+def freelancer_details(request, freelancer_id):
     '''View to display details of  selected freelancer'''
     # Include: Freelancer price and/or rate, technologies and specialties of freelancer
-    pass
+    freelancer_ = get_object_or_404(freelancer, id=freelancer_id)
+    context = {"freelancer": freelancer_}
+    return render(request, 'freelancer_details.html', context)
 
 def messages(request):
     '''View for displaying messages for logged in hirer'''

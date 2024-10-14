@@ -14,11 +14,11 @@
                 {% for freelancer in freelancers %}
                     <div class="job-card">
                         <h2>{{ freelancer.firstName }} {{ freelancer.lastName }}</h2>
-                        <p>{{ freelancer.email_address }}</p>
-                        <p>{{ freelancer.phone_no }}</p>
+                        <p><strong>Email: </strong><h4>{{ freelancer.email_address }}</h4></p>
+                        <p><strong>Phone number: </strong>{{ freelancer.phone_no }}</p>
                         <p><strong>Specialty:</strong> {{ freelancer.specialty }}</p>
                         <p><strong>Technologies(Proficiency):</strong> {{ freelancer.technologies }}</p>
-                        <a href="{% url 'freelancer_details' %}" class="btn">Freelancer's Details</a> -->
+                        <a href="{% url 'freelancer_details' freelancer.id %}" class="btn">Freelancer's Details</a>
                     </div>
                 {% endfor %}
             {% else %}

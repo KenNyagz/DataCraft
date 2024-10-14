@@ -8,7 +8,7 @@ urlpatterns = [
     path('verify_signup', views.verify_signup), #c
     path('home', views.home), #c
     path('available_freeelancers', views.freelancers_list, name='freelancers'),
-    path('freelancer_details', views.freelancer_details, name='freelancer_details'),
+    path('freelancer_details/<int:freelancer_id>', views.freelancer_details, name='freelancer_details'),
     path('create_job', views.create_job), #c
     path('register_job', views.register_job), #c
 ]

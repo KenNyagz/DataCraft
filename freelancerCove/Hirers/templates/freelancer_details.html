@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+p strong {
+    font-weight: bold;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Additional media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    a.btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h2>{{ freelancer.firstName }} {{ freelancer.lastName }}</h2>
+                        <p><strong>Email: </strong><h4>{{ freelancer.email_address }}</h4></p>
+                        <p><strong>Phone number: </strong>{{ freelancer.phone_no }}</p>
+                        <p><strong>Specialty:</strong> {{ freelancer.specialty }}</p>
+                        <p><strong>Technologies(Proficiency):</strong> {{ freelancer.technologies }}</p>
+                        <a href="{% url 'freelancers' %}" class="btn">Back to Freelancers</a>
+    </div>
+</body>
+</html>
