@@ -6,6 +6,7 @@ from django.contrib.auth.hashers import make_password, check_password
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
 from .models import Hirer, job
+from Freelancers.models import freelancer
 
 def sign_up(request):
     '''sign_in view'''
@@ -24,6 +25,7 @@ def verify_signup(request):
         lastname = request.POST['lastname']
         email= request.POST['email']
         password = request.POST['password']
+        phone_no = request.POST['phone']
         hashed_password = make_password(password)
         # other fields to be prompted later on, into the app
 
@@ -31,7 +33,8 @@ def verify_signup(request):
                           firstName=firstname,
                           lastName=lastname,
                           email_address=email,
-                          hashed_password=hashed_password
+                          hashed_password=hashed_password,
+                          phone_no=phone_no
         )
         try:
             new_hirer.save()
@@ -100,7 +103,9 @@ def home(request):
 
 def freelancers_list(request):
     '''View to display available freelancers for hirer'''
-    pass
+    freelancers = freelancer.objects.all()
+    context = {"freelancers": freelancers}
+    return render(request, 'available_freelancers.html', context)
 
 def freelancer_details(request):
     '''View to display details of  selected freelancer'''

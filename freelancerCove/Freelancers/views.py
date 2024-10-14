@@ -28,6 +28,7 @@ def verify_signup(request):
         specialty = request.POST['specialty']
         technologies = request.POST['technologies']
         password = request.POST['password']
+        phone_no = request.POST['phone']
         hashed_password = make_password(password)
         # other fields to be prompted later on, into the app
 
@@ -37,7 +38,8 @@ def verify_signup(request):
                                     email_address=email,
                                     specialty=specialty,
                                     technologies=technologies,
-                                    hashed_password=hashed_password
+                                    hashed_password=hashed_password,
+                                    phone_no=phone_no
         )
         try:
             new_freelancer.save()

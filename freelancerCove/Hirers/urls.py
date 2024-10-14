@@ -7,7 +7,8 @@ urlpatterns = [
     path('verify_login', views.verify_login), #c
     path('verify_signup', views.verify_signup), #c
     path('home', views.home), #c
-    path('available_freeelancers', views.freelancers_list),
+    path('available_freeelancers', views.freelancers_list, name='freelancers'),
+    path('freelancer_details', views.freelancer_details, name='freelancer_details'),
     path('create_job', views.create_job), #c
-    path('register_job', views.register_job)
+    path('register_job', views.register_job), #c
 ]

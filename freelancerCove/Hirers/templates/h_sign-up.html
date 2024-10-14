@@ -139,6 +139,16 @@ h1 {
   top: 100%;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button /* Hide spinner For Chrome, Safari, and Edge */
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield; /* Hides the spinner in Firefox */
+}
+
 .credits {
   position: fixed;
   left: 0;
@@ -197,6 +207,18 @@ h1 {
   </div>
   <div class='control block-cube block-input'>
     <input name='email' placeholder='Email address' type='email' required>
+    <div class='bg-top'>
+      <div class='bg-inner'></div>
+    </div>
+    <div class='bg-right'>
+      <div class='bg-inner'></div>
+    </div>
+    <div class='bg'>
+      <div class='bg-inner'></div>
+    </div>
+  </div>
+  <div class='control block-cube block-input'>
+    <input name='phone' placeholder='Phone number' type='number'>
     <div class='bg-top'>
       <div class='bg-inner'></div>
     </div>
