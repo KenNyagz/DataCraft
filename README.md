@@ -2,8 +2,8 @@
 ### The freelance site for data scientists
 
 # URL Enpoints
-/  
-/intermediate  
+```/ - Landing page```  
+```/intermediate - Lounge/intermediary page that asks you if you are a freelancer or a hirer```  
 /freelance/sign-up  
 /freelance/login  
 /freelance/verify_signup  
