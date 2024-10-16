@@ -3,8 +3,8 @@
 
 # URL Enpoints
 /
-/intermediate
-/freelance/sign-up
+/intermediate  
+/freelance/sign-up  
 /freelance/login
 /freelance/verify_signup
 /freelance/verify_login
