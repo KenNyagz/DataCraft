@@ -5,10 +5,10 @@
 /
 /intermediate  
 /freelance/sign-up  
-/freelance/login
-/freelance/verify_signup
-/freelance/verify_login
-/frelance/home - available jobs
+/freelance/login  
+/freelance/verify_signup  
+/freelance/verify_login  
+/frelance/home - available jobs 
 /job_detail/<int:job_id>
 /hiring/sign-up
 /hiring/login
