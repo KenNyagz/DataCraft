@@ -181,7 +181,7 @@ Avails form for new job creation where hirer specifies details of the job
 - Browser-based endpoint - True  
 
 17.**`[POST]/hiring/register_job`**  
-Register new job into the database
+Registers new job into the database
 
 *Request*
 - Method: `POST`
