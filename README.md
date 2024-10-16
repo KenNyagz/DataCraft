@@ -160,7 +160,7 @@ Filters freelancers from the database depending on matching specialty or technol
 - Compulsory request parameters - None
 - Browser-based endpoint - True  
 
-15.**`[GET]/hiring/freelancer_details/<int: freelancer_id>`**
+15.**`[GET]/hiring/freelancer_details/<int: freelancer_id>`**  
 Displays details of selected freelancer
 
 *Request*
