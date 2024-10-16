@@ -2,7 +2,7 @@
 ### The freelance site for data scientists
 
 # URL Enpoints
-/
+/  
 /intermediate  
 /freelance/sign-up  
 /freelance/login  
