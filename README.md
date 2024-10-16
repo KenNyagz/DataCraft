@@ -18,7 +18,7 @@
 /hiring/freelancer_details/<int:freelancer_id>  
 /hiring/create_job  
 /hiring/register  
-
+  
 1. **`[GET] /`**
 Loads the landing page
 
@@ -27,6 +27,7 @@ Loads the landing page
 - Endpoint: `/`
 
 - Compulsory request parameters - None
+- Browser-side endpoint - True  
 
 2. **`[GET] /intermediate`**
 Retrieves the lounge. An intermediary page for choosing whether you want to register as a freelancer or a hirer
@@ -36,7 +37,7 @@ Retrieves the lounge. An intermediary page for choosing whether you want to regi
 - Endpoint: `/intermediate`
 
 - Compulsory request parameters - None
-- Browser-side endpoint - True
+- Browser-side endpoint - True  
 
 3. **`[GET] /freelancer/sign-up`**
 Loads the freelancersign-up page
@@ -46,4 +47,4 @@ Loads the freelancersign-up page
 - Endpoint: `/freelance/sign-up`
 
 - Compulsory request parameters - None
-- Browser-side endpoint - True
+- Browser-side endpoint - True  
