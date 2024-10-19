@@ -190,4 +190,4 @@ Registers new job into the database
 - Compulsory request parameters - None (Mandatory fields to be passed from 'hiring/create_job' page)
 - Browser-based endpoint - False
 
-<a>https://kennyagz.pythonanywhere.com/</a>
+Site URL: <a>https://kennyagz.pythonanywhere.com/</a>
