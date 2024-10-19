@@ -1,4 +1,4 @@
-# DataCraft (formerly FreelanceCove)
+# **DataCraft** (formerly FreelanceCove)
 ### The freelance site for data scientists
 
 # URL Enpoints
