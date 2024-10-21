@@ -81,8 +81,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'freelance_cove',
         'USER': 'root',
-        'PASSWORD': '@Kennyaga', #'IamKen404',
-        'HOST': 'localhost', #'db-1.czi6g8eggmcx.eu-north-1.rds.amazonaws.com',
+        'PASSWORD': '@Kennyaga',
+        'HOST': 'localhost',
         'PORT': '3306'
     }
 }
