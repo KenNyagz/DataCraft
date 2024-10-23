@@ -1,6 +1,9 @@
 # DataCraft
 (formerly FreelancerCove)
 ### The freelance site for data scientists
+Data craft is a freealance marketpalce targeting data scientists and entities looking for data science service.  
+Services or jobs one can find: Big data, Machine learning, LLM training, Data science, Data analytics.
+Join datacraft and enjoy the beauty of data.
 
 # URL Enpoints
 /  
