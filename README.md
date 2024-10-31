@@ -195,3 +195,4 @@ Registers new job into the database
 - Browser-based endpoint - False
 
 Site URL: <a>https://kennyagz.pythonanywhere.com/</a>
+          <a>https://kennyagz.pythonanywhere.com/</a>
