@@ -12,7 +12,7 @@ Join datacraft and enjoy the beauty of data.
 /freelance/login  
 /freelance/verify_signup  
 /freelance/verify_login  
-/frelance/home  
+/freelance/home  
 /job_detail/<int:job_id>  
 /hiring/sign-up  
 /hiring/login  
